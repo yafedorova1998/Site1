@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <style type="css/css1.css">
+ body{
+   background: no-repeat;
+ }
+
+  </style>
+  <meta charset="utf-8">
+  <script>
+     function change_color(obj)
+     {
+       obj.value && (document.body.style.backgroundColor = obj.value);
+       obj.src && (document.body.style.backgroundImage = 'url('+obj.src+')');
+     }
+	</script>
+</head>
+
+<body>
+<form method="post" action="1.php" onsubmit="return false">
+	<button class="color" id="red" name="button" value="red" onclick='change_color(this)'>red</button>
+	<button class="color" id="orange" name="button" value="orange" onclick='change_color(this)'>orange</button>
+   
+	</form>
+
+</body>
+
+</html>
